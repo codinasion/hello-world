@@ -1,3 +1,6 @@
+# Create all 'hello world' issues
+# Should only be used once !!!
+
 import os
 import sys
 
@@ -56,7 +59,7 @@ for language in languages:
     if language["type"] == "programming":
 
         print(language["name"])
-        
+
         if "extensions" in language:
 
             for extension in language["extensions"]:
@@ -76,6 +79,6 @@ Write a {language['name']} program to print \"Hello World\"
                 }
 
                 CreateIssue(issue_data)
-                counter +=1
+                counter += 1
 
 print("Total issues created: ", counter)

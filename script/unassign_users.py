@@ -1,3 +1,5 @@
+# Unassign users from issues which are assigned for more than 15 days
+
 import datetime
 import requests
 import time
@@ -88,7 +90,8 @@ for issue in issues:
                     unassign_response = requests.delete(
                         unassign_url,
                         headers={"Authorization": f"Bearer {REPO_TOKEN}"},
-                        json={"assignees": [latest_assignment_event["actor"]["login"]]},
+                        json={"assignees": [
+                            latest_assignment_event["actor"]["login"]]},
                     )
 
                     # Wait for few seconds to prevent Github API secondary rate limit
