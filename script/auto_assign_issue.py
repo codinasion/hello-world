@@ -1,3 +1,6 @@
+# Auto assign 'good first issue' issues to user
+# When they comment '!assign' on the issue
+
 import os
 import sys
 
@@ -29,7 +32,8 @@ else:
     sys.exit(1)
 
 # Get issue data
-URL = "https://api.github.com/repos/{}/{}/issues/{}".format(OWNER, REPO, ISSUE_NUMBER)
+URL = "https://api.github.com/repos/{}/{}/issues/{}".format(
+    OWNER, REPO, ISSUE_NUMBER)
 issue_data_request = requests.get(
     URL,
     headers={
