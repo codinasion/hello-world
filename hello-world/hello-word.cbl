@@ -1,0 +1,6 @@
+        IDENTIFICATION DIVISION.
+        PROGRAM-ID, HELLO.
+        PROCEDURE DIVISION.
+        MAIN.
+          DISPLAY "Hello World!" END-DISPLAY.
+        STOP RUN.
