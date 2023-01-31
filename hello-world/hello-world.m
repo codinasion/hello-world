@@ -1,8 +1,10 @@
-#import <Foundation/Foundation.h>
+// HelloWorld.m
+#import "HelloWorld.h"
 
-int main (int argc, const char * argv[]) {
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    NSLog (@"Hello, World!");
-    [pool drain];
-    return 0;
+@implementation HelloWorld
+
++ (void)load {
+    NSLog(@"Hello, World!");
 }
+
+@end
