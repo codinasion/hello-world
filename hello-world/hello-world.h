@@ -1,6 +1,11 @@
 // HelloWorld.h
 #import <Foundation/Foundation.h>
 
-@interface HelloWorld : NSObject
+int main (int argc, const char * argv[]) {
+   NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 
-@end
+   NSLog (@"Hello World");
+
+   [pool drain];
+   return 0;
+}
