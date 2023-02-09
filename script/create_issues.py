@@ -1,7 +1,6 @@
 # Create all 'hello world' issues
 # Should only be used once !!!
 
-import os
 import sys
 
 import requests

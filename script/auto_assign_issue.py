@@ -1,11 +1,9 @@
 # Auto assign 'good first issue' issues to user
 # When they comment '!assign' on the issue
 
-import os
 import sys
 
 import requests
-import time
 
 OWNER = "codinasion"
 REPO = "hello-world"
