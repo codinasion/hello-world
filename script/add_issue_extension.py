@@ -1,6 +1,5 @@
 # Add .{extension} label to all issues
 
-import os
 import sys
 
 import requests
@@ -77,12 +76,15 @@ def Main():
                             print("==>> Issue update failed :( !!!")
                             print(update_issue_request.json())
                             sys.exit(1)
+                    time.sleep(1)
 
             GET_ISSUE_PAGE += 1
 
             if len(get_issue_request.json()) < 100:
                 print("No more issues to process (<100)")
                 break
+
+            time.sleep(1)
 
         else:
             print("==>> Issues fetch failed :( !!!")

@@ -3,7 +3,6 @@
 import datetime
 import requests
 import time
-import os
 import sys
 
 REPO_OWNER = "codinasion"
